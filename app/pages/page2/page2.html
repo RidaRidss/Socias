@@ -1,0 +1,32 @@
+
+<ion-navbar *navbar>
+  
+<ion-title style="background-color:#6CBDE6;">
+ Go To Socias 
+</ion-title>
+
+</ion-navbar>
+
+
+<ion-content class="page2">
+
+
+
+<ion-list>
+  <ion-item>
+    <ion-label style="color:#6CBDE6;" stacked floating>Username</ion-label>
+    <ion-input #user name="user" type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label style="color:#6CBDE6;" stacked floating>Password</ion-label>
+    <ion-input #password name="password" type="password"></ion-input>
+  </ion-item>
+ <ion-item hidden> </ion-item>
+</ion-list>
+  <div padding>
+    <button style="background-color:#6CBDE6;" (click)="signIN(user,password);" block>Log In</button>
+  </div>
+<div padding>
+    <button primary (click)="signUp(user,password);" block>Create Account</button>
+</div> 
+</ion-content>
